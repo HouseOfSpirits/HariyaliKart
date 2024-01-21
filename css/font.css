@@ -1,0 +1,29 @@
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-medium.ttf) format('ttf');
+}
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-medium.ttf);
+}
+
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-book.ttf);
+}
+
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-semibold.ttf);
+}
+
+
+@font-face {
+  font-family: dosis;
+  src: url(../assets/font/dosis-semibold.ttf);
+}

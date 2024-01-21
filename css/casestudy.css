@@ -1,0 +1,272 @@
+@import url(/css/font.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --ff-dosis: dosis;
+    --clr-light-white: #fbfbf9;
+}
+
+body {
+    font-family: var(--ff-dosis);
+    background-color: var(--clr-light-white);
+}
+
+section.banner {
+    margin-top: 5rem;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.712)), url(../assets/images/skull-kat-M7fi58_dF5k-unsplash-scaled.jpg) no-repeat 50% 20% / cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bottom-pattern {
+    position: relative;
+}
+
+.bottom-pattern {
+    --wpr-bg-: url(../assets/images/1.png);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: -55px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--wpr-bg-);
+}
+
+.wrapper {
+    width: min(85%, 1140px);
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+div.product-banner {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(1.1); */
+}
+
+div.logo-box {
+    width: 100px;
+    height: 140px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.logo-box img {
+    width: 100%;
+    object-position: bottom;
+    object-fit: cover;
+    position: relative;
+    top: 19px;
+}
+
+div.right-header {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-content: center;
+}
+
+div.right-header .right-header__title {
+    display: flex;
+    color: #efefef;
+    text-transform: capitalize;
+    transition: .5s linear;
+    font-size: 2.5rem;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+div.right-header .right-header__title:hover {
+    color: #08f5cd;
+}
+
+div.icon {
+    padding: 5px 0;
+    /* display: flex; */
+    gap: .4rem;
+    /* align-items:center; */
+    /* text-align: center; */
+    color: #efefef;
+    font-weight: 800;
+}
+
+div.icon>ol.breadcrumb {
+    display: flex;
+    /* align-items: center; */
+    gap: .2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icon>ol li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: .2rem;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+div.icon>ol li>a {
+    color: #efefef;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: .3rem;
+    text-decoration: none;
+    /* padding: 0 .5rem; */
+    position: relative;
+}
+
+
+.active {
+    color: rgb(255, 230, 0);
+}
+
+.info {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.info>h2 {
+    font-size: 1.1rem;
+}
+
+.info>h1 {
+    font-size: 2rem;
+}
+
+.info>h1+p {
+    opacity: .5;
+    line-height: 1.5rem;
+
+}
+
+.image {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 20%;
+    box-shadow: 10px -10px 0 0 black;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+footer .logo-box {
+    margin: 1.5rem 0 0 0;
+    box-shadow: 7px 6px 25px -1px rgba(92, 89, 89, 0.329);
+}
+
+footer nav ul {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0 0 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer nav ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer nav+p {
+    font-size: 1.2rem;
+    opacity: .7;
+    padding: 1.5rem;
+}
+
+
+
+@media (min-width:650px) {
+
+    div.product-banner {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    div.icon>ol.breadcrumb {
+        justify-content: start;
+    }
+
+    main.casestudy {
+        margin: 2rem 0;
+    }
+
+    .info h1+p {
+        max-width: 75%;
+    }
+
+    .casestudy-component {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        /* flex-direction: row; */
+    }
+   
+    .image {
+        display: flex;
+        flex:1 0 40%;
+    }
+
+
+    .image img {
+        flex-shrink: 0;
+    }
+
+    .casestudy-component:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .casestudy-component .info {
+        width: 80%
+    }
+
+    footer nav ul {
+        flex-direction: row;
+    }
+}
